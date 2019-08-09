@@ -68,7 +68,7 @@ int time=10;
 str.Format(_T("%d"), time);
 CTraceService::TraceString(str, TraceLevel_Exception);
 
-//输出char类型
+//输出char*, const char*, char[]类型
 char *cpFunctionNameLog = __FUNCTION__;
 TCHAR lpMsgzmx1[256];
 MultiByteToWideChar(CP_ACP, 0, cpFunctionNameLog, -1, lpMsgzmx1, 256);
