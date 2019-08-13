@@ -100,4 +100,9 @@ CTraceService::TraceString(str2, TraceLevel_Debug);
 1.子游戏服务器进程未关闭
 2.生成的目标文件名不能为中文，且这个文件名应与旧的dll文件同名
 ```
++ 项目生成失败
+```
+从svn上check out来的文件，添加到解决方案里，直接生成会失败，报错时带有这样的关键字：链接库、afxmessagebox、
+将编译选项设置为release-Unicode解决问题
+```
 
